@@ -15,7 +15,7 @@ const Login = (props) => {
             <Section>
                 <Hero>
                     <h1>Welcome to your friend space!</h1>
-                    <img src="/assets/hero-image-circle.svg" alt=''></img>
+                    <img style={{width: '600px'}}src="/assets/loginBG.svg" alt=''></img>
                 </Hero>
                 <Form>
                     <Google>
@@ -119,13 +119,13 @@ const Hero = styled.a`
         }
     }
     img{
-        /* z-index: -1; */
         width: 700px;
         height: 670px;
         position: absolute;
         bottom: -2px;
         right: -150px;
         @media (max-width: 768px){
+            z-index: -1;
             top: 230px;
             width: initial;
             position: initial;
